@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "dtd",
+    "tnt",
+    "dtd"
+  ],
+  "key": {
+    "d": {
+      "item": "minecraft:diamond"
+    },
+    "n": {
+      "item": "minecraft:nether_star"
+    },
+    "t": {
+      "item": "totemicend:totem_dust"
+    }
+  },
+  "result": {
+    "item": "totemicend:crystalised_totemic_shard",
+    "count": 1
+  }
+}

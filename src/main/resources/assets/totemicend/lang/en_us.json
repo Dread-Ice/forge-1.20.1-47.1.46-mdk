@@ -1,5 +1,9 @@
 {
   "item.totemicend.totem_dust": "Totem Dust",
-  "item.totemicend.totem_shard": "Totem Shard",
-  "item.totemicend.crystalised_totemic_shard": "Crystalised Totemic Shard"
+  "item.totemicend.totem_fragment": "Totem Fragment",
+  "item.totemicend.crystalised_totemic_shard": "Crystalised Totemic Shard",
+
+  "block.totemicend.totem_block": "Totem Block",
+  "block.totemicend.totem_fragment_ore": "Totem Fragment Ore",
+  "block.totemicend.reinforced_totem_block": "Reinforced Totem Block"
 }

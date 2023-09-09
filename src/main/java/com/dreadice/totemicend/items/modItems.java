@@ -12,7 +12,7 @@ public class modItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, TotemicEnd.MOD_ID);
 
     public static final RegistryObject<Item> TOTEM_DUST = ITEMS.register("totem_dust",() -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> TOTEM_SHARD = ITEMS.register("totem_shard",() -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> TOTEM_FRAGMENT = ITEMS.register("totem_fragment",() -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CRYSTALISED_TOTEMIC_SHARD = ITEMS.register("crystalised_totemic_shard",() -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {

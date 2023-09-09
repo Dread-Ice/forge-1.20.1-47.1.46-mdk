@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "totemicend:block/reinforced_totem_block"
+    }
+  }
+}

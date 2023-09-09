@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "totemic",
+  "ingredient": {
+    "item": "totemicend:totem_fragment"
+  },
+  "result": "totemicend:totem_fragment"
+}

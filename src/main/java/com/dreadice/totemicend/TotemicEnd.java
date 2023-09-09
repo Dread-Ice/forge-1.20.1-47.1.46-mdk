@@ -1,5 +1,6 @@
 package com.dreadice.totemicend;
 
+import com.dreadice.totemicend.blocks.modBlocks;
 import com.dreadice.totemicend.items.modItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -26,6 +27,7 @@ public class TotemicEnd {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         modItems.register(modEventBus);
+        modBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -40,9 +42,9 @@ public class TotemicEnd {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            //event.accept(modItems.TOTEM_DUST);
-            //event.accept(modItems.TOTEM_SHARD);
-            //event.accept(modItems.CRYSTALISED_TOTEMIC_SHARD);
+            event.accept(modItems.TOTEM_DUST);
+            event.accept(modItems.TOTEM_FRAGMENT);
+            event.accept(modItems.CRYSTALISED_TOTEMIC_SHARD);
         }
     }
 

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "totemicend:totem_fragment_from_blasting_totem_fragment_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_totem_fragment_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "totemicend:totem_fragment_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_totem_fragment_ore",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "totemicend:totem_fragment_from_blasting_totem_fragment_ore"
+    ]
+  },
+  "sends_telemetry_event": false
+}

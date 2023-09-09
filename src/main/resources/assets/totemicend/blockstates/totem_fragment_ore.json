@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "totemicend:block/totem_fragment_ore"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "totemicend:totem_block",
+    "totemicend:totem_fragment_ore"
+  ]
+}
