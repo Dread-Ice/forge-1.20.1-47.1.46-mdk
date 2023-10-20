@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "minecraft:block/end_stone_bricks",
+    "side": "totemicend:block/totemic_portal_side0",
+    "top": "totemicend:block/totemic_portal_top_off"
+  }
+}

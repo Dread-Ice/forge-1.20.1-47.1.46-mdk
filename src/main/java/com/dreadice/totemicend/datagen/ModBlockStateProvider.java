@@ -17,7 +17,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         blockWithItem(modBlocks.TOTEM_BLOCK);
         blockWithItem(modBlocks.TOTEM_FRAGMENT_ORE);
-        blockWithItem(modBlocks.REINFORCED_TOTEM_BLOCK);
+        //blockWithItem(modBlocks.REINFORCED_TOTEM_BLOCK);
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

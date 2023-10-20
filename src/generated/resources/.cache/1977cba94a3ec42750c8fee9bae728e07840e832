@@ -1,0 +1,7 @@
+// 1.20.1	2023-09-18T21:36:14.7955307	Block States: totemicend
+d15cb9a84c4b6192551bd82943a741d36c5707de assets/totemicend/blockstates/totem_block.json
+d8a38b965dcba7d6e6b261cc40d1a98495890a7e assets/totemicend/blockstates/totem_fragment_ore.json
+19e877fe5c1d1b7fd3e0bae595921bca59f31aa6 assets/totemicend/models/block/totem_block.json
+dc1d83d4cd8d844f3240963839d16c1ab307f49c assets/totemicend/models/block/totem_fragment_ore.json
+0bb3fbcc6dfafbc01e9a89b1b0b90b9c6078df20 assets/totemicend/models/item/totem_block.json
+bf0f66e80f9a1caf09dc775c0da87d964cacb762 assets/totemicend/models/item/totem_fragment_ore.json

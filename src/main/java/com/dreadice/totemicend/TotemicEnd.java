@@ -1,8 +1,11 @@
 package com.dreadice.totemicend;
 
 import com.dreadice.totemicend.blocks.modBlocks;
+import com.dreadice.totemicend.entity.ModEntities;
+import com.dreadice.totemicend.entity.client.TotemicGolemRenderer;
 import com.dreadice.totemicend.items.modItems;
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -28,6 +31,7 @@ public class TotemicEnd {
 
         modItems.register(modEventBus);
         modBlocks.register(modEventBus);
+        ModEntities.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -46,6 +50,18 @@ public class TotemicEnd {
             event.accept(modItems.TOTEM_FRAGMENT);
             event.accept(modItems.CRYSTALISED_TOTEMIC_SHARD);
         }
+
+        if(event.getTabKey() == CreativeModeTabs.COMBAT) {
+            event.accept(modItems.TOTEMIC_SWORD);
+            event.accept(modItems.TOTEMIC_AXE);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            event.accept(modItems.TOTEMIC_SHOVEL);
+            event.accept(modItems.TOTEMIC_PICKAXE);
+            event.accept(modItems.TOTEMIC_PICKAXE);
+            event.accept(modItems.TOTEMIC_HOE);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
@@ -59,6 +75,8 @@ public class TotemicEnd {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+
+            EntityRenderers.register(ModEntities.TOTEMICGOLEM.get(), TotemicGolemRenderer::new);
 
         }
     }

@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "totemicend:totem_block"
+          "name": "minecraft:air"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "minecraft:blocks/totem_block"
+  "random_sequence": "totemicend:blocks/reinforced_totem_block"
 }

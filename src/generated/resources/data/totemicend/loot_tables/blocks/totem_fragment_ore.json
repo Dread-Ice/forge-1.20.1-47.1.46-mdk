@@ -46,5 +46,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "minecraft:blocks/totem_fragment_ore"
+  "random_sequence": "totemicend:blocks/totem_fragment_ore"
 }

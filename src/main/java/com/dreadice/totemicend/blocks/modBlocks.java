@@ -1,6 +1,7 @@
 package com.dreadice.totemicend.blocks;
 
 import com.dreadice.totemicend.TotemicEnd;
+import com.dreadice.totemicend.blocks.custom.TotemicPortalBlock;
 import com.dreadice.totemicend.items.modItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -25,6 +26,7 @@ public class modBlocks {
     //Function to make the Totem Bock's Light Level 7
     public static ToIntFunction<BlockState> TotemShardOreLevel= BlockState -> 3;
 
+
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, TotemicEnd.MOD_ID);
 
@@ -38,6 +40,9 @@ public class modBlocks {
 
     public static final RegistryObject<Block> REINFORCED_TOTEM_BLOCK = registerBlock("reinforced_totem_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.REINFORCED_DEEPSLATE)));
+
+    public static final RegistryObject<Block> TOTEMIC_PORTAL = registerBlock("totemic_portal",
+            () -> new TotemicPortalBlock(BlockBehaviour.Properties.of().noLootTable().noOcclusion().strength(55.0F, 1200.0F)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

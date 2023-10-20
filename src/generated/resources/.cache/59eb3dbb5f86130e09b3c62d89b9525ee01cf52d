@@ -1,0 +1,4 @@
+// 1.20.1	2023-09-18T21:36:14.7935362	Loot Tables
+215b389bc6f6bc44180b4902e53d3e7bd1a62b8e data/totemicend/loot_tables/blocks/reinforced_totem_block.json
+d9d9a72bfe1aa828c7e49b2b06c75717fb252a3c data/totemicend/loot_tables/blocks/totem_block.json
+85a034bc1119db8695cb4c93c68b387c6b6a4b12 data/totemicend/loot_tables/blocks/totem_fragment_ore.json

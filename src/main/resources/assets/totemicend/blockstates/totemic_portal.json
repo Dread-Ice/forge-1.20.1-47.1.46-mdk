@@ -1,0 +1,31 @@
+{
+  "variants": {
+    "charges=0": {
+      "model": "totemicend:block/totemic_portal_side0"
+    },
+    "charges=1": {
+      "model": "totemicend:block/totemic_portal_side1"
+    },
+    "charges=2": {
+      "model": "totemicend:block/totemic_portal_side2"
+    },
+    "charges=3": {
+      "model": "totemicend:block/totemic_portal_side3"
+    },
+    "charges=4": {
+      "model": "totemicend:block/totemic_portal_side4"
+    },
+    "charges=5": {
+      "model": "totemicend:block/totemic_portal_side5"
+    },
+    "charges=6": {
+      "model": "totemicend:block/totemic_portal_side6"
+    },
+    "charges=7": {
+      "model": "totemicend:block/totemic_portal_side7"
+    },
+    "charges=8": {
+      "model": "totemicend:block/totemic_portal_side8"
+    }
+  }
+}

@@ -20,11 +20,23 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(modItems.TOTEM_DUST);
         simpleItem(modItems.CRYSTALISED_TOTEMIC_SHARD);
         simpleItem(modItems.TOTEM_FRAGMENT);
+
+        handheldItem(modItems.TOTEMIC_SWORD);
+        handheldItem(modItems.TOTEMIC_AXE);
+        handheldItem(modItems.TOTEMIC_PICKAXE);
+        handheldItem(modItems.TOTEMIC_SHOVEL);
+        handheldItem(modItems.TOTEMIC_HOE);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(TotemicEnd.MOD_ID,"item/" + item.getId().getPath()));
+    }
+
+    private ItemModelBuilder handheldItem(RegistryObject<Item> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/handheld")).texture("layer0",
                 new ResourceLocation(TotemicEnd.MOD_ID,"item/" + item.getId().getPath()));
     }
 }
